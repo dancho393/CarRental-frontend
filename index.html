@@ -10,23 +10,40 @@
       <h1>Car Leasing Calculator</h1>
     </div>
     <div class="select-container">
-      <div class="select-item">
-        <label class="car-type" for="car-type">Car Type</label>
-        <select name="car-type" id="car-type">
-          <option value="new">Brand new</option>
-          <option value="used">Used</option>
-        </select>
+      <div class="select-column">
+        <div class="select-item">
+          <label class="car-type" for="car-type">Car Type</label>
+          <select name="car-type" id="car-type">
+            <option value="new">Brand new</option>
+            <option value="used">Used</option>
+          </select>
+        </div>
+        <div class="select-item">
+          <label class="car-value" for="car-value">Car Value</label>
+          <input type="text" id="car-value" name="car-value">
+          <input type="range" id="car-value-slider" name="car-value-slider" min="0" max="100000" step="1000">
+        </div>
       </div>
-      <div class="select-item">
-        <label class="lease-period" for="lease-period">Lease Period</label>
-        <select name="lease-period" id="lease-period">
-          <option value="12">12 months</option>
-          <option value="24">24 months</option>
-          <option value="36">36 months</option>
-          <option value="48">48 months</option>
-          <option value="60">60 months</option>
-        </select>
+      <div class="select-column">
+        <div class="select-item">
+          <label class="lease-period" for="lease-period">Lease Period</label>
+          <select name="lease-period" id="lease-period">
+            <option value="12">12 months</option>
+            <option value="24">24 months</option>
+            <option value="36">36 months</option>
+            <option value="48">48 months</option>
+            <option value="60">60 months</option>
+          </select>
+        </div>
+        <div class="select-item">
+          <label class="down-payment" for="down-payment">Down Payment</label>
+          <input type="text" id="down-payment" name="down-payment">
+          <input type="range" id="down-payment-slider" name="down-payment-slider" min="0" max="20000" step="500">
+        </div>
       </div>
+    </div>
+    <div>
+      <hr>
     </div>
   </div>
 </body>
