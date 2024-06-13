@@ -1,23 +1,33 @@
 <!doctype html>
 <html>
-  <head>
-    <link rel="stylesheet" href="index.css">
-    
-    <title>Car Rental</title>
-  
-   
-</select>
-  </head>
-  <body>
-    <div class="outset">
-      <div class="title">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <title>Car Rental</title>
+</head>
+<body>
+  <div class="outset">
+    <div class="title">
       <h1>Car Leasing Calculator</h1>
     </div>
-      <label for="dog-names">Choose a dog name:</label>
-<select name="dog-names" id="dog-names">   
-    <option value="new">Brand new</option>
-    <option value="used">Used</option>
-    
-</select>
+    <div class="select-container">
+      <div class="select-item">
+        <label class="car-type" for="car-type">Car Type</label>
+        <select name="car-type" id="car-type">
+          <option value="new">Brand new</option>
+          <option value="used">Used</option>
+        </select>
+      </div>
+      <div class="select-item">
+        <label class="lease-period" for="lease-period">Lease Period</label>
+        <select name="lease-period" id="lease-period">
+          <option value="12">12 months</option>
+          <option value="24">24 months</option>
+          <option value="36">36 months</option>
+          <option value="48">48 months</option>
+          <option value="60">60 months</option>
+        </select>
+      </div>
     </div>
+  </div>
+</body>
 </html>
