@@ -43,3 +43,36 @@ select, input[type="text"], input[type="range"] {
 .car-type, .car-value, .lease-period, .down-payment {
   font-size: 40px;
 }
+
+.leasing-details-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative;
+}
+
+.leasing-details-left, .leasing-details-right {
+  flex: 1;
+}
+
+.leasing-item {
+  margin-bottom: 20px;
+}
+
+.leasing-title {
+  font-size: 40px;
+}
+
+#total-cost, #down-payment-value, #monthly-installment, #interest-rate {
+  font-size: 20px;
+}
+
+.vertical-line {
+  width: 2px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40%;
+  transform: translateX(-50%);
+}
