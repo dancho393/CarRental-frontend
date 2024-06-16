@@ -1,7 +1,5 @@
-
-
 .outset {
-  width: 100%; 
+  width: 80%; 
   border-style: outset;
   border-width: 2px;
   margin: 0 auto;
@@ -17,7 +15,7 @@
 .select-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px; 
+  margin-bottom: 20px; /* Add some space between rows */
 }
 
 .select-column {
@@ -55,9 +53,9 @@ select, input[type="text"], input[type="range"] {
 
 .leasing-details-left {
   flex: 1;
+  
 }
-
-.leasing-details-right {
+.leasing-details-right{
   flex: 1;
   margin-left: 10%;
 }
@@ -73,16 +71,9 @@ select, input[type="text"], input[type="range"] {
   width: 50%;
 }
 
-.leasing-item-text {
-  font-size: 40px;
-  width: 30%;
-  clear: both;
-  display: inline-block;
-  white-space: nowrap;
-}
-
 #total-cost, #down-payment-value, #monthly-installment, #interest-rate {
   font-size: 40px;
+  
 }
 
 .vertical-line {
@@ -94,30 +85,7 @@ select, input[type="text"], input[type="range"] {
   left: 50%;
   transform: translateX(-50%);
 }
-
-.leasing-details-title {
+.leasing-details-title{
   font-size: 50px;
   text-align: center;
-}
-
-
-@media only screen and (max-width: 1268px) {
-  .select-container, .leasing-details-container {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .select-column, .leasing-details-left, .leasing-details-right {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .select-item, .leasing-item {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .vertical-line {
-    display: none;
-  }
 }

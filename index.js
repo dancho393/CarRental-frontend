@@ -60,9 +60,9 @@ document.addEventListener("DOMContentLoaded", function() {
         var monthlyInstallment = loanAmount * monthlyInterestRate / (1 - Math.pow(1 + monthlyInterestRate, -leasePeriod));
         var totalCost = monthlyInstallment * leasePeriod + downPayment;
 
-        document.getElementById("down-payment-value").textContent = "€" + downPayment.toFixed(2);
-        document.getElementById("monthly-installment").textContent = "€" + monthlyInstallment.toFixed(2);
-        document.getElementById("total-cost").textContent = "€" + totalCost.toFixed(2);
+        document.getElementById("down-payment-value").textContent = "Down Payment €" + downPayment.toFixed(2);
+        document.getElementById("monthly-installment").textContent = "Montly Installment €" + monthlyInstallment.toFixed(2);
+        document.getElementById("total-cost").textContent = "Total Leasing Cost €" + totalCost.toFixed(2);
         document.getElementById("interest-rate-text").textContent = "Interest Rate: " + interestRate + "%";
     }
 
