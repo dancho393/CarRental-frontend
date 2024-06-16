@@ -56,15 +56,18 @@ select, input[type="text"], input[type="range"] {
 }
 
 .leasing-item {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .leasing-title {
   font-size: 40px;
+  width: 50%;
 }
 
 #total-cost, #down-payment-value, #monthly-installment, #interest-rate {
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .vertical-line {
@@ -73,6 +76,6 @@ select, input[type="text"], input[type="range"] {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 40%;
+  left: 50%;
   transform: translateX(-50%);
 }

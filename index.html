@@ -14,15 +14,15 @@
       <div class="select-column">
         <div class="select-item">
           <label class="car-type" for="car-type">Car Type</label>
-          <select name="car-type" id="car-type" onchange="calculateInterest()">
+          <select name="car-type" id="car-type">
             <option value="new">Brand new</option>
             <option value="used">Used</option>
           </select>
         </div>
         <div class="select-item">
           <label class="car-value" for="car-value-input">Car Value(€10,000-€200,000)</label>
-          <input type="text" id="car-value-input" name="car-value" onchange="changeCarValue()" value=10000 placeholder="10000">
-          <input type="range" id="car-value-slider" name="car-value-slider" min="10000" max="200000" step="1000" onchange="changeCarValue()">
+          <input type="text" id="car-value-input" name="car-value" value="10000" placeholder="10000">
+          <input type="range" id="car-value-slider" name="car-value-slider" min="10000" max="200000" step="1000">
         </div>
       </div>
       <div class="select-column">
@@ -38,8 +38,8 @@
         </div>
         <div class="select-item">
           <label class="down-payment" for="down-payment">Down Payment(10%-50%)</label>
-          <input type="text" id="down-payment" name="down-payment" onchange="changeDownPayment()" placeholder="10" value="10">
-          <input type="range" id="down-payment-slider" name="down-payment-slider" min="10" max="50" step="5" onchange="changeDownPayment()">
+          <input type="text" id="down-payment" name="down-payment" placeholder="10" value="10">
+          <input type="range" id="down-payment-slider" name="down-payment-slider" min="10" max="50" step="5">
         </div>
       </div>
     </div>
@@ -50,18 +50,18 @@
       <div class="leasing-details-left">
         <div class="leasing-item">
           <div class="leasing-title">Total Leasing Cost:</div>
-          <div id="total-cost"></div>
+          <div id="total-cost">€0.00</div>
         </div>
         <div class="leasing-item">
           <div class="leasing-title">Down Payment:</div>
-          <div id="down-payment-value"></div>
+          <div id="down-payment-value">€0.00</div>
         </div>
       </div>
       <div class="vertical-line"></div>
       <div class="leasing-details-right">
         <div class="leasing-item">
           <div class="leasing-title">Monthly Installment:</div>
-          <div id="monthly-installment"></div>
+          <div id="monthly-installment">€0.00</div>
         </div>
         <div class="leasing-item">
           <div id="interest-rate-text" class="leasing-title">Interest Rate:</div>
